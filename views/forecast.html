@@ -1,8 +1,7 @@
 <p> This is a {{days}} day weather forcast for: {{weather}} </p>
 
 <!-- taking advantage of route params to pull out the variable established in our routes to get the number of days -->
-<!-- dynamically add a class to the view depending on if the expression is true or not, what comes in from routeParams is a string so we have
-to use that type -->
+<!-- dynamically add a class to the view depending on if the expression is true or not, what comes in from routeParams is a string so we have to use that type -->
 <div class="row">
     <div class="col-sm-6">
         <p>How many days would you like to forcast?: <a href="#/forecast/3" ng-class="{'bg-primary': days === '3'}">3</a> | <a href="#/forecast/5" ng-class="{'bg-primary': days === '5'}">5</a> | <a href="#/forecast/7" ng-class="{'bg-primary': days === '7'}">7</a></p>
