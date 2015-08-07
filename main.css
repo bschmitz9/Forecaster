@@ -1,0 +1,11 @@
+.weather{
+    margin-top: 117px;
+}
+
+.clear{
+    background-color: #b1d9f4;
+}
+
+.cloudy{
+    background-color: #fafafa;
+}

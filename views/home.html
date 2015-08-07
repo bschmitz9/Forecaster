@@ -1,0 +1,14 @@
+<div class="row">
+    <div class='col-sm-6 col-sm-offset-3'>
+    <!-- we wrap our input field in a form and include ng-submit which allows the user to hit enter to get the forcast in addition to clicking-->
+    <!-- internet browsers accept the enter key as a form submit -->
+        <form ng-submit="submit()">
+          <div class="form-group weather">
+                <label for="weather">Get Your Forecast:</label>
+                <input type="text" class="form-control" id="weather" ng-model="weather" placeholder="Enter your city here">
+          </div>
+          <input type="submit" class="btn btn-primary btn-block" value="Get Forecast" />
+        </form>
+    </div>
+    
+</div>

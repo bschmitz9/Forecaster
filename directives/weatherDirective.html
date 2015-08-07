@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Date: {{weatherDay.dt * 1000 | date: "MMMM d, y"}}</h3>
+      </div>
+      <div class="panel-body" ng-class="{'clear': weatherDay.weather[0].main === 'Clear', 'cloudy': weatherDay.weather[0].main === 'Clouds'}">
+            <p>The temperature will be: <strong>{{convertToStandard({degrees: weatherDay.temp.day}) }}&deg;F </strong> mid-day. </p>
+
+            <p>It will be {{weatherDay.weather[0].main}} with a humidity of {{weatherDay.humidity}}&deg;F throughout the day.</p>
+
+            <p ng-if="weatherDay.temp.day > weatherDay.temp.night">It looks like it will cool down to <strong>{{convertToStandard({degrees: weatherDay.temp.night}) }}&deg;F </strong>at night.</p>
+      </div>
+</div>
